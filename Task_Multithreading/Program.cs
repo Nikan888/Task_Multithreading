@@ -14,7 +14,7 @@ namespace Task_Multithreading
         {
             //Console.WriteLine("/// First algorithm ///");
             long firstGCD = GCDComputer.FirstGCD(65, 74);
-            Console.WriteLine("GCD = {0}", firstGCD);
+            Console.WriteLine("GCD1 = {0}", firstGCD);
             //Console.WriteLine("///////////////////////////////////////////////////////////////////////");
         }
 
@@ -22,14 +22,14 @@ namespace Task_Multithreading
         {
             //Console.WriteLine("/// Second algorithm ///");
             long secondGCD = GCDComputer.SecondGCD(32, 78);
-            Console.WriteLine("GCD = {0}", secondGCD);
+            Console.WriteLine("GCD2 = {0}", secondGCD);
         }
 
         static void MyThread3()
         {
             //Console.WriteLine("/// Third algorithm ///");
             long thirdGCD = GCDComputer.ThirdGCD(25, 45);
-            Console.WriteLine("GCD = {0}", thirdGCD);
+            Console.WriteLine("GCD3 = {0}", thirdGCD);
         }
 
         static void Main(string[] args)
@@ -52,7 +52,7 @@ namespace Task_Multithreading
 
             //Console.WriteLine("/// Euqlid algorithm ///");
             long euqlidGCD = GCDComputer.EuqlidGCDRec(63, 77);
-            Console.WriteLine("GCD = {0}", euqlidGCD);
+            Console.WriteLine("GCD4 = {0}", euqlidGCD);
 
             stopwatch.Stop();
             Console.WriteLine("Elapsed = {0}", stopwatch.Elapsed);
